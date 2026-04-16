@@ -114,9 +114,10 @@ nav ul li a {
 .tech-stack {
     margin: 60px auto 100px auto;
     max-width: 1400px;
-    width: 55%;
+    width: 50%;
     display: flex;
     overflow: hidden;
+    gap: 0;
 }
 
 .tech-stack::-webkit-scrollbar {
@@ -178,8 +179,10 @@ nav ul li a {
 .midterm-categories {
     display: grid;
     grid-template-columns: 380px 380px;
+    grid-template-rows: auto auto;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
+    align-items: start;
 }
 
 .midterm-categories .card {
@@ -188,11 +191,10 @@ nav ul li a {
     align-items: flex-start;
 
     width: 100%;
-    height: 100%;
-    min-height: 250px;
+    height: 380px;
     white-space: normal;
 
-    border-radius: 8px;
+    border-radius: 15px;
     border: 1px solid #E8E8E8;
     padding: 1rem;
 }
@@ -200,10 +202,11 @@ nav ul li a {
 .midterm-categories .card img {
     height: 180px;
     width: 100%;
-    flex: 0 0 180px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: block;
+    flex-shrink: 0;
 }
 
 .midterm-categories .card h3 {
@@ -211,6 +214,7 @@ nav ul li a {
     font-weight: 700;
     color: #111111;
     margin: 0;
+    padding: 0.75rem 1rem 0.25rem 1rem;
 }
 
 .midterm-categories .card p {
@@ -218,4 +222,60 @@ nav ul li a {
     color: #6b7280;
     line-height: 1.6;
     margin: 0;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.see-more-btn {
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.see-more-btn p {
+    color: #fff;
+    padding: .03rem 2rem;
+}
+
+/* --- APPRECIATION --- */
+
+#appreciation {
+    padding: 40px 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.appreciation-text {
+    align-items: center;
+}
+
+.appreciation-text h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 750;
+    margin-bottom: 30px;
+}
+
+.message {
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 25px;
+    gap: 20px;
+    padding: 3rem;
+    line-height: 1.4;
+}
+
+.message p {
+    font-size: 18px;
 }
