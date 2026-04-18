@@ -38,7 +38,7 @@ nav ul li a {
 /* --- HERO / HOME --- */
 
 .container {
-    padding: 40px 10%;
+    padding: 60px 10%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -112,7 +112,7 @@ nav ul li a {
 }
 
 .tech-stack {
-    margin: 60px auto 100px auto;
+    margin: 40px auto 100px auto;
     max-width: 1400px;
     width: 50%;
     display: flex;
@@ -134,7 +134,7 @@ nav ul li a {
     flex-shrink: 0;
 }
 
-.card {
+.tech-card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,11 +146,11 @@ nav ul li a {
     white-space: nowrap;
 }
 
-.card i {
+.tech-card i {
     font-size: 1.5rem;
 }
 
-.card p {
+.tech-card p {
     font-size: 1.1rem;
     font-weight: 400;
     margin: 0;
@@ -173,7 +173,14 @@ nav ul li a {
     text-align: center;
     font-size: 28px;
     font-weight: 750;
+    margin-bottom: 15px;
+}
+
+.midterm-text p {
+    text-align: center;
+    font-size: 18PX;
     margin-bottom: 30px;
+    line-height: 25px;
 }
 
 .midterm-categories {
@@ -189,15 +196,18 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 
     width: 100%;
-    height: 380px;
+    min-height: 180px;
     white-space: normal;
 
     border-radius: 15px;
     border: 1px solid #E8E8E8;
     padding: 1rem;
 }
+
+/* For Image
 
 .midterm-categories .card img {
     height: 180px;
@@ -209,12 +219,32 @@ nav ul li a {
     flex-shrink: 0;
 }
 
-.midterm-categories .card h3 {
+*/
+
+.midterm-categories .card i {
+    margin: 0;
+    padding: 0;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.75rem 1rem 0.25rem 1rem;
+    margin-bottom: 10px;
+}
+
+.card-header i {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.card-header h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #111111;
     margin: 0;
-    padding: 0.75rem 1rem 0.25rem 1rem;
+    line-height: 1;
 }
 
 .midterm-categories .card p {
@@ -267,15 +297,35 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
+.msg-card {
+    display: flex;
+    gap: 20px;
+}
+
+.msg-img img{
+    width: auto;
+    max-height: 320px;
+    border-radius: 25px;
+}
+
 .message {
     background-color: #E8E8E8;
     padding: 20px;
     border-radius: 25px;
+    max-height: 320px;
+
     gap: 20px;
     padding: 3rem;
     line-height: 1.4;
 }
 
+.message h3 {
+    font-size: 20px;
+}
+
 .message p {
     font-size: 18px;
 }
+
+/* --- CONTACT --- */
+
