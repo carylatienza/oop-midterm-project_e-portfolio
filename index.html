@@ -11,9 +11,11 @@
 
     <!-- ================= NAV ================= -->
     <nav>
+
         <a class="nav-logo" href="#home">
             <span class="accent">✦</span> Caryl Atienza
         </a>
+
         <div class="nav-center">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,13 +24,15 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+
         <!-- THEME TOGGLE -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
             <span class="toggle-thumb" id="toggleThumb">☀️</span>
         </button>
+
     </nav>
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= HERO SECTION ================= -->
     <section id="home">
 
         <h1 class="hero-heading">Hi, I'm <em>Caryl.</em><br>Aspiring Full-Stack Developer.</h1>
@@ -36,6 +40,7 @@
 
         <!-- ABOUT CARD -->
         <div class="about-card">
+
             <div class="about-left">
                 <span class="about-label">About Me</span>
                 <div class="about-text">
@@ -43,6 +48,7 @@
                     <p>This e-portfolio presents my <strong>Midterm Project in Object-Oriented Programming</strong> using GitHub Pages. It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
                     <p>Additionally, this e-portfolio has been coded using HTML, CSS, and JavaScript.</p>
                 </div>
+
                 <div class="social-pills">
                     <a class="social-pill" href="https://www.facebook.com/carylatienzaa/" target="_blank">
                         <i class="fa-brands fa-facebook"></i> Facebook
@@ -57,13 +63,16 @@
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
+
             </div>
+
             <div class="about-right">
                 <div class="photo-wrapper" id="photoWrapper">
                     <img class="about-photo" id="aboutPhoto" src="images/shark.png" alt="Caryl Atienza">
                     <span class="photo-click-hint">click to change ✦</span>
                 </div>
             </div>
+            
         </div>
 
     </section>
@@ -175,9 +184,7 @@
     <!-- ================= JS ================= -->
     <script>
 
-        // ══════════════════════════════════════════
         // THEME TOGGLE (light default, persists via localStorage)
-        // ══════════════════════════════════════════
         const html        = document.documentElement;
         const toggleBtn   = document.getElementById('themeToggle');
         const toggleThumb = document.getElementById('toggleThumb');
@@ -202,10 +209,7 @@
             localStorage.setItem('darkMode', !isDark);
         });
 
-
-        // ══════════════════════════════════════════
-        // TECH STACK — seamless marquee
-        // ══════════════════════════════════════════
+        // TECH STACK — CAROUSEL EFFECT
         const techItems = [
             { icon: 'fa-brands fa-html5',    label: 'HTML' },
             { icon: 'fa-brands fa-css3-alt', label: 'CSS' },
@@ -223,12 +227,10 @@
         trackEl.innerHTML = [...techItems, ...techItems].map(buildTechItem).join('');
 
 
-        // ══════════════════════════════════════════
-        // PHOTO CLICK — cycle photos + star burst
-        // ══════════════════════════════════════════
+        // PHOTO CLICK
         const photos = [
-            'images/shark.png',
             'images/DP.png',
+            'images/shark.png',
         ];
         const starEmojis = ['✦','★','✸','✺','✻','⭐','🌟','💫'];
         let photoIndex = 0;
@@ -260,9 +262,7 @@
         }
 
 
-        // ══════════════════════════════════════════
-        // CAROUSEL — cards link to project pages
-        // ══════════════════════════════════════════
+        // PROJECTS: Activities, Quizzes, Seatworks, Exam
         const allCards = [
             { type: 'activity', badge: 'Activity', img: 'images/activities/act1_1.jpg', title: 'Activity 1',    desc: 'Introduction to Java',                              tags: ['Java','OOP'], link: 'projects/activity-1.html' },
             { type: 'activity', badge: 'Activity', img: 'images/activities/act2_1.png', title: 'Activity 2',    desc: 'Operators',                                         tags: ['Java','OOP'], link: 'projects/activity-2.html' },
@@ -338,10 +338,7 @@
             });
         });
 
-
-        // ══════════════════════════════════════════
         // ACTIVE NAV HIGHLIGHT ON SCROLL
-        // ══════════════════════════════════════════
         const sections = ['home','midterm','finals','contact'];
         const navLinks = document.querySelectorAll('nav ul li a');
 
