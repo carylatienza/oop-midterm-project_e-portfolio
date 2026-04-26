@@ -1,0 +1,285 @@
+/* ================= ACTIVITY PAGES — SHARED STYLES ================= */
+/* Link this AFTER version2.css in every activity HTML:               */
+/*   <link rel="stylesheet" href="../version2.css">                   */
+/*   <link rel="stylesheet" href="../activity.css">                   */
+
+
+/* ── HERO ── */
+.project-hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 110px 8% 50px;
+    width: 100%;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateX(-3px);
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.project-badge {
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.project-date {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.project-title {
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.project-title em { font-style: normal; color: var(--accent); }
+
+.project-desc {
+    font-size: 17px;
+    color: var(--text-muted);
+    max-width: 1000px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+.project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.project-tags span {
+    background: var(--accent-dim);
+    color: var(--accent);
+    padding: 5px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(249,115,22,0.2);
+}
+
+
+/* ── BODY GRID ── */
+.project-body {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 8% 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 48px;
+    align-items: start;
+}
+
+
+/* ── CONTENT BLOCKS ── */
+.project-content-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    margin-bottom: 20px;
+    min-width: 0; /* prevents grid blowout from wide content */
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.block-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.block-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.block-text {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.75;
+}
+
+.block-text p { margin-bottom: 0.9em; }
+.block-text p:last-child { margin-bottom: 0; }
+.block-text strong { color: var(--text); }
+
+
+/* ── CODE BLOCK ── */
+.code-block {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+.code-block pre {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text);
+    margin: 0;
+}
+
+.code-block ul,
+.code-block ol {
+    padding-left: 20px;
+    margin: 12px 0;
+}
+
+/* syntax colours */
+.code-block .kw  { color: #f97316; }
+.code-block .cls { color: #fb923c; }
+.code-block .str { color: #86efac; }
+.code-block .cmt { color: var(--text-muted); font-style: italic; }
+.code-block .fn  { color: #93c5fd; }
+
+
+/* ── IMAGES ── */
+.project-preview-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    display: block;
+    margin-top: 20px;
+    background: var(--bg-subtle);
+}
+
+/* any img dropped inside a code-block (e.g. activity-2 screenshot) */
+.code-block img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+}
+
+.block-text img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 16px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+}
+
+
+/* ── SIDEBAR ── */
+.project-sidebar { position: sticky; top: 90px; }
+
+.sidebar-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.sidebar-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+}
+
+.sidebar-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+}
+
+.sidebar-stat:last-child { border-bottom: none; padding-bottom: 0; }
+.sidebar-stat .s-key { color: var(--text-muted); }
+.sidebar-stat .s-val { font-weight: 600; color: var(--text); }
+
+.sidebar-score {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.score-number {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.score-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.score-bar-wrap {
+    margin-top: 16px;
+    background: var(--bg-subtle);
+    border-radius: var(--radius-pill);
+    height: 6px;
+    overflow: hidden;
+}
+
+.score-bar {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(to right, var(--accent), var(--accent-light));
+    transition: width 1s cubic-bezier(.34,1.56,.64,1);
+}
+
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+    .project-body { grid-template-columns: 1fr; }
+    .project-sidebar { position: static; }
+}
+
+@media (max-width: 640px) {
+    .project-hero { padding: 100px 6% 40px; }
+    .project-body { padding: 0 6% 60px; }
+}

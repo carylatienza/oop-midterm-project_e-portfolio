@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 — Introduction to Java | Caryl Atienza</title>
+    <link rel="stylesheet" href="../version2.css">
+    <link rel="stylesheet" href="../activity.css">
+    <script src="https://kit.fontawesome.com/418eb8c512.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ================= NAV ================= -->
+    <nav>
+        <a class="nav-logo" href="../version2.html">
+            <span class="accent">✦</span> Caryl Atienza
+        </a>
+        <div class="nav-center">
+            <ul>
+                <li><a href="../version2.html#home">Home</a></li>
+                <li><a href="../version2.html#midterm" class="active">Midterm</a></li>
+                <li><a href="../version2.html#finals">Finals</a></li>
+                <li><a href="../version2.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="toggle-thumb" id="toggleThumb">☀️</span>
+        </button>
+    </nav>
+
+    <!-- ================= PROJECT HERO ================= -->
+    <div class="project-hero">
+        <a class="back-link" href="../version2.html#midterm">
+            ← Back to Portfolio
+        </a>
+
+        <div class="project-meta">
+            <span class="project-badge">Assignment</span>
+            <span class="project-date">COMP 009 · OOP · 2025</span>
+        </div>
+
+        <h1 class="project-title">Assignment 1 — <em>Introduction to Java</em></h1>
+        <p class="project-desc">An introduction to Java as a language—it's concepts, components, and history as well.</p>
+
+        <div class="project-tags">
+            <span>Java</span>
+            <span>OOP</span>
+            <span>Conceptual</span>
+        </div>
+    </div>
+
+    <!-- ================= BODY ================= -->
+    <div class="project-body">
+
+        <!-- MAIN CONTENT -->
+        <div>
+
+            <!-- Overview -->
+            <div class="project-content-block">
+                <p class="block-label">Overview</p>
+                <h2 class="block-title">What this activity covers</h2>
+                <div class="block-text">
+                    <p>The goal of this activity was to research and familiarize myself with Java.</p>
+                </div>
+                <img class="project-preview-img" src="../images/activities/act-1.png" alt="Activity 1 Screenshot">
+            </div>
+
+            <!-- Questions & Answers -->
+            <div class="project-content-block">
+                <p class="block-label">Questions & Answers</p>
+                <h2 class="block-title">Introduction to Java</h2>
+                <div class="block-text">
+                    <p>These are my answers for the assignment.</p>
+                </div>
+                <div class="code-block">
+                    <p><strong>1. What is Java programming language? Discuss its Features & advantages.</strong></p>
+                    <p>Java is a high-level programming language and computing platform known for its principle of "write once, run anywhere" (WORA). It was developed by Sun Microsystems in 1995 and later acquired by Oracle Corporation. Java is primarily object-oriented, meaning programs are structured around objects and classes. This makes it highly suitable for large-scale systems, enterprise applications, mobile development (especially Android), and back-end systems.</p>
+                    <p><br><strong>Key Features of Java:</strong></p>
+                    <ul>
+                        <li><strong>Object-Oriented:</strong> Java is built around OOP principles such as encapsulation, inheritance, polymorphism, and abstraction.</li>
+                        <li><strong>Platform Independent:</strong> Programs are compiled into bytecode, which can run on any system with a Java Virtual Machine (JVM).</li>
+                        <li><strong>Simple:</strong> Java removed complex features from C and C++, such as pointer arithmetic and manual memory management.</li>
+                        <li><strong>Secure:</strong> Provides built-in security features like no direct pointer manipulation, bytecode verification, and a security manager to prevent unauthorized access.</li>
+                        <li><strong>Robust:</strong> Features strong memory management and exception handling to reduce crashes and runtime errors.</li>
+                        <li><strong>Multithreaded:</strong> Supports running multiple tasks simultaneously.</li>
+                    </ul>
+                    <p><br><strong>Advantages of Java:</strong></p>
+                    <ul>
+                        <li>Cross-platform compatibility</li>
+                        <li>Large community and documentation.</li>
+                        <li>Used extensively in Android development.</li>
+                        <li>Strong security features and scalability for enterprise systems.</li>
+                    </ul>
+                </div>
+                <div class="code-block">
+                    <p><strong>2. Explain the concept of platform independence in Java. How does Java achieve it?</strong></p>
+                    <p>Platform independence means a program can run on different operating systems (Windows, macOS, Linux) without modification. While traditional languages like C compile code directly into machine language specific to an OS, Java uses a two-step process:</p>
+                    <ol>
+                        <li><strong>Source Code (.java)</strong> is compiled into <strong>Bytecode (.class).</strong></li>
+                        <li><strong>Bytecode is executed by the JVM.</strong></li>
+                    </ol>
+                    <p>The JVM acts as an intermediary between the bytecode and the operating system. Because each OS has its own specific JVM implementation, the same bytecode can run anywhere. Therefore, Java is platform-independent, but the JVM itself is platform-dependent.</p>
+                </div>
+                <div class="code-block">
+                    <p><strong>3. Discuss the main components of a Java program and their roles.</strong></p>
+                    <ul>
+                        <li><strong>Class:</strong> Everything in Java is inside a class; it acts as a blueprint.</li>
+                        <li><strong>Main Method:</strong> The entry point of every application (public static void main(String[] args)).</li>
+                        <li><strong>Methods:</strong> These define the behavior of objects.</li>
+                        <li><strong>Variables:</strong> Used to store data (Instance, Local, and Static variables).</li>
+                        <li><strong>Objects:</strong> Instances of classes that allow access to methods and variables.</li>
+                    </ul>
+                </div>
+                <div class="code-block">
+                    <p><strong>4. What are the differences between JDK, JRE, and JVM?</strong></p>
+                    <ul>
+                        <li><strong>JVM (Java Virtual Machine):</strong> The engine that executes bytecode and converts it into machine code for the OS.</li>
+                        <li><strong>JRE (Java Runtime Environment):</strong> Includes the JVM, core libraries, and supporting files; it allows users to run Java programs.</li>
+                        <li><strong>JDK (Java Development Kit):</strong> Includes the JRE, compiler (javac), and debugging tools; it is used to develop and run Java programs.</li>
+                    </ul>
+                </div>
+                <div class="code-block">
+                    <p><strong>5. Is Java an interpreted or compiled language?</strong></p>
+                    <p>Java uses a hybrid model:</p>
+                    <ul>
+                        <li>It is compiled into bytecode using the Java compiler (javac).</li>
+                        <li>The bytecode is then interpreted (or JIT-compiled) by the JVM.</li>
+                    </ul>
+                    <p>Modern JVMs use Just-In-Time (JIT) compilation to improve performance by converting frequently used bytecode into native machine code at runtime.</p>
+                </div>
+                <div class="code-block">
+                    <p>References:</p>
+                    <ul>
+                        <li>Deitel, P., & Deitel, H. (2017). Java: How To Program (11th ed.). Pearson.</li>
+                        <li>Oracle Corporation (2023). The Java language environment.</li>
+                        <li>Schildt, H. (2021). Java: The complete reference (12th ed.). McGraw-Hill Education.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- What I Learned -->
+            <div class="project-content-block">
+                <p class="block-label">Reflection</p>
+                <h2 class="block-title">What I learned</h2>
+                <div class="block-text">
+                    <p>Transitioning from C to Java has been a major vibe shift because moving away from manual memory management and pointer arithmetic feels way more structured and disciplined. It is honestly a win for long-term projects since Java favors a clean architecture that helps me stay organized. Learning how "write once, run anywhere" actually works was a lowkey lightbulb moment, especially seeing how the bytecode runs on the JVM middleman instead of talking to my OS directly. It makes so much sense why Java uses a hybrid model to balance performance and portability, and it definitely makes me appreciate why it's the standard for the enterprise systems and Android apps I'm looking into.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="project-sidebar">
+
+            <!-- Score card — UNGRADED -->
+            <div class="sidebar-card">
+                <p class="sidebar-label">Score</p>
+                <div class="sidebar-score">
+                    <div class="score-number" style="font-size: 20px; color: var(--text-muted);">Not Yet Graded</div>
+                    <div class="score-label" style="margin-top: 8px;">score pending</div>
+                    <div class="score-bar-wrap" style="margin-top: 16px;">
+                        <div class="score-bar" style="width: 0%; opacity: 0.3;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Details -->
+            <div class="sidebar-card">
+                <p class="sidebar-label">Details</p>
+                <div class="sidebar-stat">
+                    <span class="s-key">Type</span>
+                    <span class="s-val">Handwritten Activity</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Subject</span>
+                    <span class="s-val">COMP 009</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Term</span>
+                    <span class="s-val">Midterm</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Language</span>
+                    <span class="s-val">Java</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Topic</span>
+                    <span class="s-val">Intro to Java</span>
+                </div>
+            </div>
+
+            <!-- Navigation between projects -->
+            <div class="sidebar-card">
+                <p class="sidebar-label">Next Up</p>
+                <a href="activity-2.html" style="display:flex; align-items:center; justify-content:space-between; text-decoration:none; color:var(--text); font-size:13px; font-weight:500; padding:8px 0;">
+                    Activity 2 — Operators
+                    <span style="color:var(--accent);">→</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <span class="footer-logo">✦ Caryl Atienza</span>
+        <span>Made with love by Caryl · 2025</span>
+    </footer>
+
+    <script>
+        // ── THEME ──
+        const html        = document.documentElement;
+        const toggleBtn   = document.getElementById('themeToggle');
+        const toggleThumb = document.getElementById('toggleThumb');
+
+        function applyTheme(dark) {
+            if (dark) {
+                html.setAttribute('data-theme', 'dark');
+                toggleThumb.textContent = '🌙';
+            } else {
+                html.removeAttribute('data-theme');
+                toggleThumb.textContent = '☀️';
+            }
+        }
+
+        const savedDark = localStorage.getItem('darkMode') === 'true';
+        applyTheme(savedDark);
+
+        toggleBtn.addEventListener('click', () => {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            applyTheme(!isDark);
+            localStorage.setItem('darkMode', !isDark);
+        });
+
+        // ── SCORE ANIMATION ──
+        const SCORE = 30;
+        const MAX   = 30;
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('scoreNum').textContent = SCORE;
+                document.getElementById('scoreBar').style.width = (SCORE / MAX * 100) + '%';
+            }, 400);
+        });
+    </script>
+
+</body>
+</html>

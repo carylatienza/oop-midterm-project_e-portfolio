@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 | Caryl Atienza</title>
+    <link rel="stylesheet" href="../version2.css">
+    <link rel="stylesheet" href="../activity.css">
+    <script src="https://kit.fontawesome.com/418eb8c512.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ================= NAV ================= -->
+    <nav>
+        <a class="nav-logo" href="../version2.html">
+            <span class="accent">✦</span> Caryl Atienza
+        </a>
+        <div class="nav-center">
+            <ul>
+                <li><a href="../version2.html#home">Home</a></li>
+                <li><a href="../version2.html#midterm" class="active">Midterm</a></li>
+                <li><a href="../version2.html#finals">Finals</a></li>
+                <li><a href="../version2.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="toggle-thumb" id="toggleThumb">☀️</span>
+        </button>
+    </nav>
+
+    <!-- ================= PROJECT HERO ================= -->
+    <div class="project-hero">
+        <a class="back-link" href="../version2.html#midterm">
+            ← Back to Portfolio
+        </a>
+
+        <div class="project-meta">
+            <span class="project-badge">Quiz</span>
+            <span class="project-date">COMP 009 · OOP · 2025</span>
+        </div>
+
+        <h1 class="project-title">Quiz 1 — <em>Lesson 1 & 2</em></h1>
+        <p class="project-desc">This quiz evaluates your understanding of fundamental Java concepts from Lessons 1 and 2, specifically focusing on the language's history, architecture (JVM, JRE, JDK), and core programming structures.</p>
+
+        <div class="project-tags">
+            <span>Java</span>
+            <span>OOP Principles</span>
+            <span>JVM Architecture</span>
+            <span>Memory Management</span>
+            <span>Data Types</span>
+            <span>Coding Guidelines</span>
+        </div>
+    </div>
+
+    <!-- ================= BODY ================= -->
+    <div class="project-body">
+
+        <!-- MAIN CONTENT -->
+        <div>
+
+            <!-- Overview -->
+            <div class="project-content-block">
+                <p class="block-label">Overview</p>
+                <h2 class="block-title">What this quiz covers</h2>
+                <div class="block-text">
+                    <p>The activity covers the Java compilation and execution process, the use of Integrated Development Environments (IDEs), and the differences between primitive and reference data types. It also tests your knowledge of memory management areas—Stack, Heap, and Method Area—and how different variable types (local, instance, and static) are stored within them.</p>
+                </div>
+            </div>
+
+            <!-- What I Learned -->
+            <div class="project-content-block">
+                <p class="block-label">Reflection</p>
+                <h2 class="block-title">What I learned</h2>
+                <div class="block-text">
+                    <p>Taking this quiz on Lessons 1 and 2 was a great way to consolidate my shift from C to Java, especially regarding how the JVM manages memory behind the scenes. It’s one thing to write a "Hello World" program, but documenting the difference between the Stack and the Heap really clarified why objects behave the way they do in a larger project architecture. I’m starting to get comfortable with Java's specific coding guidelines, like using CamelCase for class names and ensuring filenames match my public classes. Understanding the role of the JIT compiler and the "write once, run anywhere" philosophy makes me appreciate the discipline Java requires compared to lower-level languages. Overall, this quiz reinforced that while Java handles the "garbage collection" for me, I still need to be precise about how I structure my classes and methods to keep my code modular and maintainable.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="project-sidebar">
+
+            <!-- Score card — UNGRADED -->
+            <div class="sidebar-card">
+                <p class="sidebar-label">Score</p>
+                <div class="sidebar-score">
+                    <div class="score-number" style="font-size: 20px; color: var(--text-muted);">Not Yet Graded</div>
+                    <div class="score-label" style="margin-top: 8px;">score pending</div>
+                    <div class="score-bar-wrap" style="margin-top: 16px;">
+                        <div class="score-bar" style="width: 0%; opacity: 0.3;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Details -->
+            <div class="sidebar-card">
+                <p class="sidebar-label">Details</p>
+                <div class="sidebar-stat">
+                    <span class="s-key">Type</span>
+                    <span class="s-val">Handwritten Activity</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Subject</span>
+                    <span class="s-val">COMP 009</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Term</span>
+                    <span class="s-val">Midterm</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Language</span>
+                    <span class="s-val">Java</span>
+                </div>
+                <div class="sidebar-stat">
+                    <span class="s-key">Topic</span>
+                    <span class="s-val">Variables</span>
+                </div>
+            </div>
+
+            <!-- Navigation between projects -->
+            <div class="sidebar-card">
+                <p class="sidebar-label">Next Up</p>
+                <a href="seatwork-1.html" style="display:flex; align-items:center; justify-content:space-between; text-decoration:none; color:var(--text); font-size:13px; font-weight:500; padding:8px 0;">
+                    Seatwork 1 — Operators
+                    <span style="color:var(--accent);">→</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <span class="footer-logo">✦ Caryl Atienza</span>
+        <span>Made with love by Caryl · 2025</span>
+    </footer>
+
+    <script>
+        // ── THEME ──
+        const html        = document.documentElement;
+        const toggleBtn   = document.getElementById('themeToggle');
+        const toggleThumb = document.getElementById('toggleThumb');
+
+        function applyTheme(dark) {
+            if (dark) {
+                html.setAttribute('data-theme', 'dark');
+                toggleThumb.textContent = '🌙';
+            } else {
+                html.removeAttribute('data-theme');
+                toggleThumb.textContent = '☀️';
+            }
+        }
+
+        const savedDark = localStorage.getItem('darkMode') === 'true';
+        applyTheme(savedDark);
+
+        toggleBtn.addEventListener('click', () => {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            applyTheme(!isDark);
+            localStorage.setItem('darkMode', !isDark);
+        });
+
+        // ── SCORE ANIMATION ──
+        const SCORE = 30;
+        const MAX   = 30;
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('scoreNum').textContent = SCORE;
+                document.getElementById('scoreBar').style.width = (SCORE / MAX * 100) + '%';
+            }, 400);
+        });
+    </script>
+
+</body>
+</html>

@@ -3,204 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caryl Joy A. Atienza [E-Portfolio]</title>
-
-    <link rel ="stylesheet" href="style.css">
+    <title>Caryl Joy A. Atienza — E-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/418eb8c512.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <div id = "header">
 
-        <nav>
+    <!-- ================= NAV ================= -->
+    <nav>
+        <a class="nav-logo" href="#home">
+            <span class="accent">✦</span> Caryl Atienza
+        </a>
+        <div class="nav-center">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="midterm.html">Midterm</a></li>
-                <li><a href="final.html">Final</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#midterm">Midterm</a></li>
+                <li><a href="#finals">Finals</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+        <!-- THEME TOGGLE -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <span class="toggle-thumb" id="toggleThumb">☀️</span>
+        </button>
+    </nav>
 
-        <div class = "container">
+    <!-- ================= HERO ================= -->
+    <section id="home">
 
-            <div class = "header-text">
-                <h1>Hi, I'm Caryl Atienza!</h1>
-                <h1>I'm an aspiring Full-Stack Developer.</h1>
+        <h1 class="hero-heading">Hi, I'm <em>Caryl.</em><br>Aspiring Full-Stack Developer.</h1>
+        <p class="hero-sub">Building things with HTML, CSS &amp; Java. Currently documenting my OOP journey through this portfolio.</p>
+
+        <!-- ABOUT CARD -->
+        <div class="about-card">
+            <div class="about-left">
+                <span class="about-label">About Me</span>
+                <div class="about-text">
+                    <p>My full name is <strong>Caryl Joy A. Atienza</strong>. I'm from BSIT 2-1N at the <strong>Polytechnic University of the Philippines.</strong></p>
+                    <p>This e-portfolio presents my <strong>Midterm Project in Object-Oriented Programming</strong> using GitHub Pages. It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
+                    <p>Additionally, this e-portfolio has been coded using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="social-pills">
+                    <a class="social-pill" href="https://www.facebook.com/carylatienzaa/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                    </a>
+                    <a class="social-pill" href="https://www.instagram.com/carylatienzaa/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a class="social-pill" href="https://github.com/carylatienza" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a class="social-pill" href="https://www.linkedin.com/in/carylatienzaa/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
             </div>
-
-            <div class = "more-about-me">
-
-                <div class = "left-content">
-                    <div class = "button-1">
-                        <p>More About Me</p>
-                    </div>
-
-                    <div class = "introduction">
-                        <p>My full name is Caryl Joy A. Atienza. I’m from BSIT 2-1N at the Polytechnic University of the Philippines.</p>
-                        <p>This e-portfolio presents my <b>Midterm Project in Object-Oriented Programming</b> using Github Pages. It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts.</p>
-                        <p>Additionally, this e-portfolio has been hard coded using HTML, and CSS.</p>
-                    </div>
-
-                    <div class = "social-media">
-                        <a href="https://www.facebook.com/carylatienzaa/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/carylatienzaa/ "><i class="fa-brands fa-instagram"></i></i></a>
-                        <a href="https://github.com/carylatienza "><i class="fa-brands fa-github"></i></i></a>
-                        <a href="https://www.linkedin.com/in/carylatienzaa/"><i class="fa-brands fa-square-linkedin"></i></i></i></a>
-                    </div>
-
+            <div class="about-right">
+                <div class="photo-wrapper" id="photoWrapper">
+                    <img class="about-photo" id="aboutPhoto" src="images/shark.png" alt="Caryl Atienza">
+                    <span class="photo-click-hint">click to change ✦</span>
                 </div>
-
-                <div class="right-content">
-                    <div class = "my-picture">
-                        <img src="images/shark.png" alt="MyPicture">
-                    </div>
-                </div>
-
-            </div>    
-
+            </div>
         </div>
 
+    </section>
+
+    <!-- ================= TECH STACK ================= -->
+    <div class="tech-stack-section">
+        <p class="tech-stack-label">Tech I work with</p>
         <div class="tech-stack">
-            <div class="group">
-                <div class="tech-card"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
-                <div class="tech-card"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
-                <div class="tech-card"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
-                <div class="tech-card"><i class="fa-brands fa-java"></i><p>Java</p></div>
-                <div class="tech-card"><i class="fa-brands fa-python"></i><p>Python</p></div>
-                <div class="tech-card"><i class="fa-brands fa-figma"></i><p>Figma</p></div>
-            </div>
-
-            <div aria-hidden class="group">
-                <div class="tech-card"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
-                <div class="tech-card"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
-                <div class="tech-card"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
-                <div class="tech-card"><i class="fa-brands fa-java"></i><p>Java</p></div>
-                <div class="tech-card"><i class="fa-brands fa-python"></i><p>Python</p></div>
-                <div class="tech-card"><i class="fa-brands fa-figma"></i><p>Figma</p></div>
-            </div>
-
+            <div class="tech-track" id="techTrack"></div>
         </div>
-
     </div>
 
-    <div id="midterm">
+    <!-- ================= MIDTERM ================= -->
+    <section id="midterm">
+        <div class="section-inner">
 
-        <div class="midterm-text">
-            <h2>Midterm</h2>
-            <p>A collection of everything I did for <b>COMP 009: Object Oriented Programming</b><br>during the Midterm period.</p>
-        </div>
+            <p class="section-label">COMP 009</p>
+            <h2 class="section-title">Midterm</h2>
+            <p class="section-sub">A collection of everything I did for Object-Oriented Programming.</p>
 
-        <div class="midterm-categories">
-
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-solid fa-file-pen"></i>
-                    <h3>Quizzes</h3>
-                </div>
-                <p>Contains my personal reflections and key takeaways from our Object-Oriented Programming midterm quizzes.</p>
+            <!-- FILTER -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="activity">Activities</button>
+                <button class="filter-btn" data-filter="quiz">Quizzes</button>
+                <button class="filter-btn" data-filter="seatwork">Seatworks</button>
+                <button class="filter-btn" data-filter="exam">Exam</button>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-solid fa-book"></i>
-                    <h3>Seatwork</h3>
-                </div>
-                <p>Features my thoughts and reflections on the problem-solving processes used during our seatwork exercises.</p>
+            <!-- CAROUSEL -->
+            <div class="carousel-wrapper">
+                <button class="nav-btn left">&#10094;</button>
+                <div class="carousel-track" id="carouselTrack"></div>
+                <button class="nav-btn right">&#10095;</button>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Activities</h3>
-                </div>
-                <p>Showcases my hands-on Java programs, complete with code screenshots and reflections on what I learned.</p>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <i class="fa-solid fa-pencil"></i>
-                    <h3>Exam</h3>
-                </div>
-                <p>Includes a comprehensive reflection on my approach and overall experience taking the midterm exam.</p>
-            </div>
+            <!-- DOTS -->
+            <div class="carousel-dots" id="carouselDots"></div>
 
         </div>
+    </section>
 
-        <div class="see-more">
-            <div class="see-more-btn">
-                <p>See More</p>
-            </div>
-        </div>
+    <!-- ================= FINALS ================= -->
+    <section id="finals">
+        <div class="section-inner">
 
-    </div>
+            <p class="section-label">Coming Soon</p>
+            <h2 class="section-title">Finals</h2>
+            <p class="section-sub">This section will be updated at the end of the semester.</p>
 
-    <div id="appreciation">
-
-        <div class="appreciation-text">
-            <h2>Appreciation</h2>
-        </div>
-
-        <div class="msg-card">
-
-            <div class="msg-img">
-                <img src="images/DP.png" alt="Sir Bedis"> 
-            </div>
-
-            <div class="message">
-                <h3>Thank you, Sir Bedis!</h3>
-                <br><p>Thank you for guiding us through Object-Oriented Programming with both patience and passion. You really helped me personally by making complex concepts feel easier to understand.</p>
-                <br><p>I also appreciate how warm you are to your students. It really lessens the intimidating side of the subject and makes learning a lot more comfortable.</p>
+            <div class="finals-placeholder">
+                <span class="finals-icon">🚧</span>
+                Finals projects will appear here once completed.
             </div>
 
         </div>
-        
+    </section>
 
-    </div>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+        <div class="section-inner">
 
-    <div id="contact">
-        <div class="container">
-            
-            <div class="left-content">
-                <h1>Contact Me</h1>
+            <div class="contact-grid">
 
-                <p class="subtitle">Email:</p>
-                <p>carylatienzaa@gmail.com</p>
+                <div class="contact-left">
+                    <p class="section-label">Get in touch</p>
+                    <h2 class="section-title">Contact Me</h2>
 
-                <p class="subtitle">Number:</p>
-                <p>+63 969 048 1894</p>
+                    <p class="contact-info-label">Email</p>
+                    <p class="contact-info-value">carylatienzaa@gmail.com</p>
 
-                <div class = "social-media">
-                        <a href="https://www.facebook.com/carylatienzaa/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/carylatienzaa/ "><i class="fa-brands fa-instagram"></i></i></a>
-                        <a href="https://github.com/carylatienza "><i class="fa-brands fa-github"></i></i></a>
-                        <a href="https://www.linkedin.com/in/carylatienzaa/"><i class="fa-brands fa-square-linkedin"></i></i></i></a>
+                    <p class="contact-info-label">Number</p>
+                    <p class="contact-info-value">+63 969 048 1894</p>
+
+                    <p class="contact-info-label" style="margin-top: 24px;">Socials</p>
+                    <div class="social-pills" style="margin-top: 8px;">
+                        <a class="social-pill" href="https://www.facebook.com/carylatienzaa/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i> Facebook
+                        </a>
+                        <a class="social-pill" href="https://www.instagram.com/carylatienzaa/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a class="social-pill" href="https://github.com/carylatienza" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a class="social-pill" href="https://www.linkedin.com/in/carylatienzaa/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="right-content">
-                <form>
+                <form class="contact-form">
                     <input type="text" name="Name" placeholder="Your name" required>
                     <input type="email" name="Email" placeholder="Your email address">
                     <textarea name="Message" rows="6" placeholder="Write something..."></textarea>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn">Send message →</button>
                 </form>
 
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <span class="footer-logo">✦ Caryl Atienza</span>
+        <span>Made with love by Caryl · 2025</span>
+    </footer>
 
-        <div class="left-content">
-            <img src="images/logo.png">
-        </div>
+    <!-- ================= JS ================= -->
+    <script>
 
-        <div class="right-content">
-            <p>Made with love by Caryl.</p>
-        </div>
+        // ══════════════════════════════════════════
+        // THEME TOGGLE (light default, persists via localStorage)
+        // ══════════════════════════════════════════
+        const html        = document.documentElement;
+        const toggleBtn   = document.getElementById('themeToggle');
+        const toggleThumb = document.getElementById('toggleThumb');
 
-    </div>
+        function applyTheme(dark) {
+            if (dark) {
+                html.setAttribute('data-theme', 'dark');
+                toggleThumb.textContent = '🌙';
+            } else {
+                html.removeAttribute('data-theme');
+                toggleThumb.textContent = '☀️';
+            }
+        }
+
+        // Load saved preference (default = light)
+        const savedDark = localStorage.getItem('darkMode') === 'true';
+        applyTheme(savedDark);
+
+        toggleBtn.addEventListener('click', () => {
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            applyTheme(!isDark);
+            localStorage.setItem('darkMode', !isDark);
+        });
+
+
+        // ══════════════════════════════════════════
+        // TECH STACK — seamless marquee
+        // ══════════════════════════════════════════
+        const techItems = [
+            { icon: 'fa-brands fa-html5',    label: 'HTML' },
+            { icon: 'fa-brands fa-css3-alt', label: 'CSS' },
+            { icon: 'fa-brands fa-js',       label: 'JavaScript' },
+            { icon: 'fa-brands fa-java',     label: 'Java' },
+            { icon: 'fa-brands fa-python',   label: 'Python' },
+            { icon: 'fa-brands fa-figma',    label: 'Figma' },
+        ];
+
+        function buildTechItem({ icon, label }) {
+            return `<span class="tech-item"><i class="${icon}"></i>${label}</span><span class="tech-dot"></span>`;
+        }
+
+        const trackEl = document.getElementById('techTrack');
+        trackEl.innerHTML = [...techItems, ...techItems].map(buildTechItem).join('');
+
+
+        // ══════════════════════════════════════════
+        // PHOTO CLICK — cycle photos + star burst
+        // ══════════════════════════════════════════
+        const photos = [
+            'images/shark.png',
+            'images/DP.png',
+        ];
+        const starEmojis = ['✦','★','✸','✺','✻','⭐','🌟','💫'];
+        let photoIndex = 0;
+
+        const photoWrapper = document.getElementById('photoWrapper');
+        const aboutPhoto   = document.getElementById('aboutPhoto');
+
+        photoWrapper.addEventListener('click', function(e) {
+            photoIndex = (photoIndex + 1) % photos.length;
+            aboutPhoto.src = photos[photoIndex];
+            spawnStars(e, photoWrapper);
+        });
+
+        function spawnStars(e, container) {
+            const rect = container.getBoundingClientRect();
+            const count = 7;
+            for (let i = 0; i < count; i++) {
+                const star = document.createElement('span');
+                star.classList.add('star-burst');
+                const angle = (i / count) * 360;
+                star.style.setProperty('--r', angle + 'deg');
+                star.style.left = (e.clientX - rect.left) + 'px';
+                star.style.top  = (e.clientY - rect.top)  + 'px';
+                star.textContent = starEmojis[i % starEmojis.length];
+                star.style.fontSize = (12 + Math.random() * 10) + 'px';
+                container.appendChild(star);
+                star.addEventListener('animationend', () => star.remove());
+            }
+        }
+
+
+        // ══════════════════════════════════════════
+        // CAROUSEL — cards link to project pages
+        // ══════════════════════════════════════════
+        const allCards = [
+            { type: 'activity', badge: 'Activity', img: 'images/activities/act1_1.jpg', title: 'Activity 1',    desc: 'Introduction to Java',                              tags: ['Java','OOP'], link: 'projects/activity-1.html' },
+            { type: 'activity', badge: 'Activity', img: 'images/activities/act2_1.png', title: 'Activity 2',    desc: 'Operators',                                         tags: ['Java','OOP'], link: 'projects/activity-2.html' },
+            { type: 'activity', badge: 'Activity', img: 'images/activities/act3_1.png', title: 'Activity 3',    desc: 'ATM with Transaction Counter',                      tags: ['Java','OOP'], link: 'projects/activity-3.html' },
+            { type: 'activity', badge: 'Activity', img: 'images/activities/act4_1.png', title: 'Activity 4',    desc: 'Student Payment System with Validation Counter',    tags: ['Java','OOP'], link: 'projects/activity-4.html' },
+            { type: 'activity', badge: 'Activity', img: 'images/activities/act5_1.png', title: 'Activity 5',    desc: 'Personal Expense Tracker',                          tags: ['Java','OOP'], link: 'projects/activity-5.html' },
+            { type: 'quiz',     badge: 'Quiz',     img: 'images/quiz.webp',      title: 'Quiz 1',        desc: 'Long Quiz: History & Operators',                    tags: ['Java','OOP'], link: 'projects/quiz-1.html' },
+            { type: 'seatwork', badge: 'Seatwork', img: 'images/seatwork.jpg',   title: 'Seatwork 1',   desc: 'Operators',                                         tags: ['Java','OOP'], link: 'projects/seatwork-1.html' },
+            { type: 'seatwork', badge: 'Seatwork', img: 'images/seatwork.jpg',   title: 'Seatwork 2',   desc: 'Handwritten Code',                                  tags: ['Java','OOP'], link: 'projects/seatwork-2.html' },
+            { type: 'exam',     badge: 'Exam',     img: 'images/exam.jpg',       title: 'Midterm Exam', desc: 'Midterm Exam',                                      tags: ['Java','OOP'], link: 'projects/midterm-exam.html' },
+        ];
+
+        const CARDS_PER_PAGE = 3;
+        let currentFilter = 'all';
+        let currentPage   = 0;
+
+        const track    = document.getElementById('carouselTrack');
+        const dotsWrap = document.getElementById('carouselDots');
+        const leftBtn  = document.querySelector('.nav-btn.left');
+        const rightBtn = document.querySelector('.nav-btn.right');
+
+        function getFiltered() {
+            return currentFilter === 'all' ? allCards : allCards.filter(c => c.type === currentFilter);
+        }
+        function totalPages(f) { return Math.ceil(f.length / CARDS_PER_PAGE); }
+
+        function buildCard(card) {
+            const tags = card.tags.map(t => `<span>${t}</span>`).join('');
+            return `
+                <a class="project-card ${card.type}" href="${card.link}">
+                    <div class="card-image">
+                        <img src="${card.img}" alt="${card.title}">
+                        <span class="badge">${card.badge}</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>${card.title}</h3>
+                        <p>${card.desc}</p>
+                        <div class="tags">${tags}</div>
+                    </div>
+                </a>`;
+        }
+
+        function render() {
+            const filtered = getFiltered();
+            const pages    = totalPages(filtered);
+            if (currentPage >= pages) currentPage = Math.max(0, pages - 1);
+
+            const slice = filtered.slice(currentPage * CARDS_PER_PAGE, currentPage * CARDS_PER_PAGE + CARDS_PER_PAGE);
+            track.innerHTML = slice.map(buildCard).join('');
+
+            leftBtn.disabled  = currentPage === 0;
+            rightBtn.disabled = currentPage >= pages - 1;
+
+            dotsWrap.innerHTML = '';
+            for (let i = 0; i < pages; i++) {
+                const dot = document.createElement('span');
+                if (i === currentPage) dot.classList.add('active');
+                dot.addEventListener('click', () => { currentPage = i; render(); });
+                dotsWrap.appendChild(dot);
+            }
+        }
+
+        rightBtn.addEventListener('click', () => { if (currentPage < totalPages(getFiltered()) - 1) { currentPage++; render(); } });
+        leftBtn.addEventListener('click',  () => { if (currentPage > 0) { currentPage--; render(); } });
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                currentPage   = 0;
+                render();
+            });
+        });
+
+
+        // ══════════════════════════════════════════
+        // ACTIVE NAV HIGHLIGHT ON SCROLL
+        // ══════════════════════════════════════════
+        const sections = ['home','midterm','finals','contact'];
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(a => a.classList.remove('active'));
+                    const active = document.querySelector(`nav ul li a[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { threshold: 0.4 });
+
+        sections.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
+        render();
+    </script>
 
 </body>
 </html>
