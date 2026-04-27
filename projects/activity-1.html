@@ -10,6 +10,8 @@
 </head>
 <body>
 
+    <div class="cursor-glow"></div>
+
     <!-- ================= NAV ================= -->
     <nav>
         <a class="nav-logo" href="../index.html">
@@ -92,14 +94,14 @@
         <!-- SIDEBAR -->
         <div class="project-sidebar">
 
-            <!-- Score card — UNGRADED -->
+            <!-- Score card — GRADED -->
             <div class="sidebar-card">
                 <p class="sidebar-label">Score</p>
                 <div class="sidebar-score">
-                    <div class="score-number" style="font-size: 20px; color: var(--text-muted);">Not Yet Graded</div>
-                    <div class="score-label" style="margin-top: 8px;">score pending</div>
-                    <div class="score-bar-wrap" style="margin-top: 16px;">
-                        <div class="score-bar" style="width: 0%; opacity: 0.3;"></div>
+                    <div class="score-number" id="scoreNum">—</div>
+                    <div class="score-label">out of 30</div>
+                    <div class="score-bar-wrap">
+                        <div class="score-bar" id="scoreBar" style="width: 0%"></div>
                     </div>
                 </div>
             </div>
@@ -153,6 +155,9 @@
         <span class="footer-logo">✦ Caryl Atienza</span>
         <span>Made with love by Caryl · 2025</span>
     </footer>
+
+    <!-- CURSOR GLOW -->
+    <script src="../cursor.js"></script>
 
     <script>
         // ── THEME ──
